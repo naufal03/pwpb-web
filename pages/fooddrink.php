@@ -29,15 +29,15 @@ Licence URI: https://www.os-templates.com/template-terms
 			<nav id="mainav" class="fl_right">
 				<!-- ################################################################################################ -->
 				<ul class="clear">
-					<li><a href="../index.html">Home</a></li>
+					<li><a href="../index.php">Home</a></li>
 					<li class="active"><a class="drop" href="#">Category</a>
 						<ul>
-							<li class="active"><a href="fooddrink.html">Foods & Drinks</a></li>
-							<li><a href="other.html">Others</a></li>
+							<li class="active"><a href="fooddrink.php">Foods & Drinks</a></li>
+							<li><a href="other.php">Others</a></li>
 						</ul>
 					</li>
-					<li><a href="/pages/about.html">About</a></li>
-					<li><a href="/pages/admin/adminlogin.html">Admin</a></li>
+					<li><a href="../index.php#ctdetails">About</a></li>
+					<li><a href="admin/adminlogin.php">Admin</a></li>
 
 				</ul>
 				<!-- ################################################################################################ -->
@@ -45,7 +45,7 @@ Licence URI: https://www.os-templates.com/template-terms
 		</header>
 	</div>
 	<!-- ################################################################################################ -->
-	<div class="bgdedoverlay1" style="background-image: url(/images/fotojual/IMG-20211024-WA0015.jpg); opacity: 50%;">
+	<div class="bgdedoverlay1" style="background-image: url(../images/fotojual/IMG-20211024-WA0015.jpg); opacity: 50%;">
 		<div id="breadcrumb" class="hoc clear">
 			<!-- ################################################################################################ -->
 			<h1 class="food">Foods & Drinks</h1>
@@ -60,22 +60,45 @@ Licence URI: https://www.os-templates.com/template-terms
 			<div class="content">
 				<!-- ################################################################################################ -->
 				<div id="gallery">
+					<!-- ini contoh dinamis -->
 					<figure>
 						<ul class="nospace clear">
-							<li class="one_quarter first"><a href="/pages/foodrink/ferdi.html"><img
-										src="../images/fotojual/ferdi.jpeg" alt=""></a>
+							<li class="one_quarter first"><a href="foodrink/ferdi.php"><img src="../images/fotojual/ferdi.jpeg" alt=""></a>
 								<p>OISHI FOOD</p>
 							</li>
-							<li class="one_quarter"><a href="/pages/foodrink/gita.html"><img src="/images/fotojual/gita.jpeg"
-										alt=""></a>
+							<li class="one_quarter"><a href="foodrink/gita.php"><img src="../images/fotojual/gita.jpeg" alt=""></a>
 								<p>NGUNYAH</p>
 							</li>
-							<li class="one_quarter"><a href="/pages/foodrink/rehan.html"><img src="/images/fotojual/rehan.jpeg"
-										alt=""></a>
+							<li class="one_quarter"><a href="foodrink/rehan.php"><img src="../images/fotojual/rehan.jpeg" alt=""></a>
 								<p>LOW KEBAB</p>
 							</li>
-							<li class="one_quarter"><a href="/pages/foodrink/fadhil.html"><img src="/images/fotojual/fadhil.jpeg"
-										alt=""></a>
+							<li class="one_quarter"><a href="foodrink/fadhil.php"><img src="../images/fotojual/fadhil.jpeg" alt=""></a>
+								<p>ROTI MARYAM</p>
+							</li>
+							<li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
+							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
+							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
+							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
+							<li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
+							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
+							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
+							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
+						</ul>
+
+					</figure>
+					<!-- ini contoh static  -->
+					<figure>
+						<ul class="nospace clear">
+							<li class="one_quarter first"><a href="foodrink/ferdi.php"><img src="../images/fotojual/ferdi.jpeg" alt=""></a>
+								<p>OISHI FOOD</p>
+							</li>
+							<li class="one_quarter"><a href="foodrink/gita.php"><img src="../images/fotojual/gita.jpeg" alt=""></a>
+								<p>NGUNYAH</p>
+							</li>
+							<li class="one_quarter"><a href="foodrink/rehan.php"><img src="../images/fotojual/rehan.jpeg" alt=""></a>
+								<p>LOW KEBAB</p>
+							</li>
+							<li class="one_quarter"><a href="foodrink/fadhil.php"><img src="../images/fotojual/fadhil.jpeg" alt=""></a>
 								<p>ROTI MARYAM</p>
 							</li>
 							<li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>

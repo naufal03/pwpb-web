@@ -14,7 +14,7 @@ Licence URI: https://www.os-templates.com/template-terms
 	<title>Admin Page Login</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link href="/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+	<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body id="top">
@@ -29,15 +29,15 @@ Licence URI: https://www.os-templates.com/template-terms
 			<nav id="mainav" class="fl_right">
 				<!-- ################################################################################################ -->
 				<ul class="clear">
-					<li><a href="/index.html">Home</a></li>
-					<li class="active"><a class="drop" href="#">Category</a>
+					<li><a href="../../index.php">Home</a></li>
+					<li class=""><a class="drop" href="#">Category</a>
 						<ul>
-							<li><a href="/pages/fooddrink.html">Foods & Drinks</a></li>
-							<li class="active"><a href="/pages/other.html">Others</a></li>
+							<li><a href="../fooddrink.php">Foods & Drinks</a></li>
+							<li class=""><a href="../other.php">Others</a></li>
 						</ul>
 					</li>
-					<li><a href="/pages/about.html">About</a></li>
-					<li><a href="/pages/admin/adminlogin.html">Admin</a></li>
+					<li><a href="../../index.php#ctdetails">About</a></li>
+					<li class="active"><a href="adminlogin.php">Admin</a></li>
 
 				</ul>
 				<!-- ################################################################################################ -->
@@ -46,7 +46,7 @@ Licence URI: https://www.os-templates.com/template-terms
 	</div>
 
 	<!-- ################################################################################################ -->
-	<div class="bgded overlay" style="background-image:url(/images/fotojual/IMG-20211024-WA0016.jpg);opacity: 60%;">
+	<div class="bgded overlay" style="background-image:url(../../images/fotojual/IMG-20211024-WA0016.jpg);opacity: 60%;">
 		<div id="breadcrumb" class="hoc clear">
 			<!-- ################################################################################################ -->
 			<ul>
@@ -66,24 +66,24 @@ Licence URI: https://www.os-templates.com/template-terms
 			<div class="pagefood">
 				<!-- ################################################################################################ -->
 				
-					<div class="login">
-						<h2 class="login-header">Admin Login</h2>
-						<form class="login-container" action="login.php" method="POST">
-							<p>
-								<input type="email" placeholder="Email" name="email" />
-							</p>
-							<p>
-								<input type="password" placeholder="Password" name="password" />
-							</p>
-							<p>
-								<input type="submit" placeholder="Login Bre" />
-							</p>
-						</form>
-					</div>
-				
-				<!-- ################################################################################################ -->
-				<!-- / main body -->
-				<div class="clear"></div>
+				<div class="login">
+					<h2 class="login-header">Admin Login</h2>
+					<form class="login-container" action="login.php" method="POST">
+						<p>
+							<input type="text" placeholder="Email" name="username" />
+						</p>
+						<p>
+							<input type="password" placeholder="Password" name="password" />
+						</p>
+						<p>
+							<input type="submit" placeholder="Login Bre" />
+						</p>
+					</form>
+			</div>
+			
+			<!-- ################################################################################################ -->
+			<!-- / main body -->
+			<div class="clear"></div>
 		</main>
 	</div>
 	<!-- ################################################################################################ -->

@@ -8,7 +8,7 @@ Licence: Free to use under our free template licence terms
 Licence URI: https://www.os-templates.com/template-terms
 -->
 <html lang="">
-<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations --> 
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
 
 <head>
 	<title>Others</title>
@@ -29,15 +29,15 @@ Licence URI: https://www.os-templates.com/template-terms
 			<nav id="mainav" class="fl_right">
 				<!-- ################################################################################################ -->
 				<ul class="clear">
-					<li><a href="../index.html">Home</a></li>
+					<li><a href="../index.php">Home</a></li>
 					<li class="active"><a class="drop" href="#">Category</a>
 						<ul>
-							<li class="active"><a href="fooddrink.html">Foods & Drinks</a></li>
-							<li><a href="other.html">Others</a></li>
+							<li class="active"><a href="fooddrink.php">Foods & Drinks</a></li>
+							<li><a href="other.php">Others</a></li>
 						</ul>
 					</li>
-					<li><a href="/pages/about.html">About</a></li>
-					<li><a href="/pages/admin/adminlogin.html">Admin</a></li>
+					<li><a href="../index.php#ctdetails">About</a></li>
+					<li><a href="admin/adminlogin.php">Admin</a></li>
 
 				</ul>
 				<!-- ################################################################################################ -->
@@ -45,7 +45,7 @@ Licence URI: https://www.os-templates.com/template-terms
 		</header>
 	</div>
 	<!-- ################################################################################################ -->
-	<div class="bgded overlay" style="background-image: url(/images/fotojual/IMG-20211024-WA0014.jpg);opacity: 60%;">
+	<div class="bgded overlay" style="background-image: url(../images/fotojual/IMG-20211024-WA0014.jpg);opacity: 60%;">
 		<div id="breadcrumb" class="hoc clear">
 			<!-- ################################################################################################ -->
 			<h1>Others</h1>
@@ -62,7 +62,7 @@ Licence URI: https://www.os-templates.com/template-terms
 				<div id="gallery">
 					<figure>
 						<ul class="nospace clear">
-							<li class="one_quarter first"><a href="/pages/others page/septian.html"><img src="/images/fotojual/Sr.jpg"
+							<li class="one_quarter first"><a href="others page/septian.php"><img src="../images/fotojual/Sr.jpg"
 										alt=""></a>
 								<p>Sr Paperbus</p>
 							</li>

@@ -14,7 +14,7 @@ Licence URI: https://www.os-templates.com/template-terms
 	<title>Toko Slime</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link href="/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body id="top">
@@ -29,15 +29,15 @@ Licence URI: https://www.os-templates.com/template-terms
 			<nav id="mainav" class="fl_right">
 				<!-- ################################################################################################ -->
 				<ul class="clear">
-					<li><a href="/index.html">Home</a></li>
+					<li><a href="../../index.php">Home</a></li>
 					<li class="active"><a class="drop" href="#">Category</a>
 						<ul>
-							<li><a href="/pages/fooddrink.html">Foods & Drinks</a></li>
-							<li class="active"><a href="/pages/other.html">Others</a></li>
+							<li><a href="../fooddrink.php">Foods & Drinks</a></li>
+							<li class="active"><a href="../other.php">Others</a></li>
 						</ul>
 					</li>
-					<li><a href="/pages/about.html">About</a></li>
-					<li><a href="/pages/admin/adminlogin.html">Admin</a></li>
+					<li><a href="../../index.php#ctdetails">About</a></li>
+					<li><a href="../admin/adminlogin.php">Admin</a></li>
 
 				</ul>
 				<!-- ################################################################################################ -->
@@ -46,7 +46,7 @@ Licence URI: https://www.os-templates.com/template-terms
 	</div>
 
 	<!-- ################################################################################################ -->
-	<div class="bgded overlay" style="background-image:url(/images/fotojual/IMG-20211024-WA0015.jpg);opacity: 60%;">
+	<div class="bgded overlay" style="background-image:url(../../images/fotojual/IMG-20211024-WA0015.jpg);opacity: 60%;">
 		<div id="breadcrumb" class="hoc clear">
 			<!-- ################################################################################################ -->
 			<ul>
@@ -67,7 +67,7 @@ Licence URI: https://www.os-templates.com/template-terms
 				<!-- ################################################################################################ -->
 				<div class="row">
 					<div class="column">
-						<img src="/images/fotojual/rehan.jpeg">
+						<img src="../../images/fotojual/rehan.jpeg">
 					</div>
 					<div class="column">
 						<h2>Oishi Food</h2>
