@@ -29,17 +29,16 @@ Licence URI: https://www.os-templates.com/template-terms
     <nav id="mainav" class="fl_right"> 
       <!-- ################################################################################################ -->
       <ul class="clear">
-        <li><a href="../index.html">Home</a></li>
-        <li class="active"><a class="drop" href="#">Category</a>
-          <ul>
-            <li><a href="fooddrink.html">Foods & Drinks</a></li>
-            <li class="active"><a href="other.html">Others</a></li>
-          </ul>
-        </li>
-        <li><a  href="/pages/about.html">About</a></li>
-				<li><a href="/pages/admin/adminlogin.html">Admin</a></li>
-
-      </ul>
+					<li class="active"><a href="index.php">Home</a></li>
+					<li><a class="drop" href="#">Category</a>
+						<ul>
+							<li><a href="pages/fooddrink.php">Foods & Drinks</a></li>
+							<li><a href="pages/other.php"> Others</a></li>
+						</ul>
+					</li>
+					<li><a href="pages/about.php">About</a></li>
+					<li><a href="pages/admin/adminlogin.php">Admin</a></li>
+				</ul>
       <!-- ################################################################################################ -->
     </nav>
   </header>
