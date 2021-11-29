@@ -1961,3 +1961,10 @@ img {vertical-align: middle;}
 .login input[type="submit"]:focus {
 	border-color: #05a;
 }
+/* input data  */
+.card-title{
+	min-height: 100px;
+ }
+ .card-text {
+	min-height: 120px;
+ }

@@ -18,16 +18,16 @@ Licence URI: https://www.os-templates.com/template-terms
 </head>
 
 <body id="top">
-	<!-- ################################################################################################ -->
+
 	<div class="wrapper row1">
 		<header id="header" class="hoc clear">
 			<div id="logo" class="fl_left">
-				<!-- ################################################################################################ -->
+
 				<h1 class="logoname"><a> Hayang<span>D</span>agang</a></h1>
-				<!-- ################################################################################################ -->
+
 			</div>
 			<nav id="mainav" class="fl_right">
-				<!-- ################################################################################################ -->
+
 				<ul class="clear">
 					<li class="active"><a href="index.php">Home</a></li>
 					<li><a class="drop" href="#">Category</a>
@@ -36,31 +36,31 @@ Licence URI: https://www.os-templates.com/template-terms
 							<li><a href="pages/other.php"> Others</a></li>
 						</ul>
 					</li>
-					<li><a href="index.php#ctdetails">About</a></li>
+					<li><a href="index.phpctdetails">About</a></li>
 					<li><a href="adminlogin.php">Admin</a></li>
 				</ul>
-				<!-- ################################################################################################ -->
+
 			</nav>
 		</header>
 	</div>
 
-	<!-- ################################################################################################ -->
+
 	<div class="bgdedoverlay" style="background-image: url(images/fotojual/bghome.jpg); opacity: 60%;">
 		<div id="pageintro" class="hoc clear">
 
-			<!-- ################################################################################################ -->
+
 			<article>
 				<h3 class="heading">Selamat Datang di Halaman Website Hayang Dagang</p>
 			</article>
-			<!-- ################################################################################################ -->
+
 		</div>
 	</div>
-	<!-- ################################################################################################ -->
+
 	<br><br><br>
 	<div class="wrapper row3">
 		<main class="hoc container clear">
 			<!-- main body -->
-			<!-- ################################################################################################ -->
+
 			<section id="introblocks">
 				<ul class="nospace group btmspace-80 elements elements-four">
 					<li class="one_quarter">
@@ -78,15 +78,14 @@ Licence URI: https://www.os-templates.com/template-terms
 
 				</ul>
 			</section>
-			<!-- ################################################################################################ -->
-			<!-- / main body -->
-			<div class="clear"></div>
+			< <!-- / main body -->
+				<div class="clear"></div>
 		</main>
 	</div>
-	<!-- ################################################################################################ -->
+
 	<div class="bgdedoverlaylight">
 		<section id="services" class="hoc container clear">
-			<!--################################################################################################ -->
+
 			<div class="sectiontitle">
 				<p class="nospace font-xs">Gunakan Pomo Dan Dapatkan Produk Terbaik Dengan Harga Termurah</p>
 				<h6 class="heading font-x2">Promo Tahunan</h6>
@@ -119,60 +118,60 @@ Licence URI: https://www.os-templates.com/template-terms
 				<span class="dot"></span>
 				<span class="dot"></span>
 			</div>
-			<!-- ################################################################################################ -->
+
 		</section>
 	</div>
-	<!-- ################################################################################################ -->
+
 	<div class="wrapper row3">
 		<section class="hoc container clear">
-			<!-- ################################################################################################ -->
+
 	</div>
-	<!-- ################################################################################################ -->
+
 	<div class="wrapper gradient">
 		<div class="hoc container clear">
-			<!-- ################################################################################################ -->
+
 			<div class="sectiontitle">
 				<p class="nospace font-xs">Produk Yang Sedang Trend</p>
 				<h6 class="heading font-x2">Produk Teratas</h6>
 			</div>
 			<ul class="nospace group team">
 				<li class="one_third first">
-					<figure><a class="imgover" href="pages/others page/septian.php"><img src="images/fotojual/Sr.jpg" alt=""></a>
+					<figure><a class="imgover" href="pages/other.php"><img src="images/fotojual/Sr.jpg" alt=""></a>
 						<figcaption><strong>Sr Paperbus</strong> <em>Septian Mahesa </em></figcaption>
 					</figure>
 				</li>
 				<li class="one_third">
-					<figure><a class="imgover" href="#"><img src="images/demo/348x400.png" alt=""></a>
-						<figcaption><strong>B. Doe</strong> <em>Vel velit aliquam massa</em></figcaption>
+					<figure><a class="imgover" href="#"><img src="i" alt=""></a>
+						<figcaption><strong></strong> <em></em></figcaption>
 					</figure>
 				</li>
 				<li class="one_third">
-					<figure><a class="imgover" href="#"><img src="images/demo/348x400.png" alt=""></a>
-						<figcaption><strong>C. Doe</strong> <em>Vulputate aliquet purus</em></figcaption>
+					<figure><a class="imgover" href="#"><img src="" alt=""></a>
+						<figcaption><strong></strong> <em></em></figcaption>
 					</figure>
 				</li>
 			</ul>
-			<!-- ################################################################################################ -->
+
 		</div>
 	</div>
-	<!-- ################################################################################################ -->
+
 	<div class="wrapper coloured">
 		<section id="testimonials" class="hoc container clear">
 
-			<!-- ################################################################################################ -->
-		</section>
-	</div>
-	<!-- ################################################################################################ -->
-	<div class="wrapper row3">
-		<section class="hoc container clear">
-			<!-- ################################################################################################ -->
 
 		</section>
 	</div>
-	<!-- ################################################################################################ -->
+
+	<div class="wrapper row3">
+		<section class="hoc container clear">
+
+
+		</section>
+	</div>
+
 	<div class="wrapper row2">
 		<section id="ctdetails" class="hoc container clear">
-			<!-- ################################################################################################ -->
+
 			<div class="sectiontitle">
 				<p class="nospace font-xs"></p>
 				<h6 class="heading font-x2">About Us</h6>
@@ -192,36 +191,23 @@ Licence URI: https://www.os-templates.com/template-terms
 							</strong> Septian Mahesa</span></li>
 				</ul>
 			</figure>
-			<article class="one_half">
-				<h6 class="heading">Purus nullam arcu integer</h6>
-				<p class="nospace btmspace-15">Elementum nisi ac volutpat vestibulum enim mi tincidunt eros sed justo magna odio
-					sed lacus ut non ante sit amet est luctus dictum ut dolor ac.</p>
-				<form action="#" method="post">
-					<fieldset>
-						<legend>Newsletter:</legend>
-						<input type="text" value="" placeholder="Name">
-						<input type="text" value="" placeholder="Email">
-						<button type="submit" value="submit">Submit</button>
-					</fieldset>
-				</form>
-			</article>
-			<!-- ################################################################################################ -->
+
 		</section>
 	</div>
-	<!-- ################################################################################################ -->
+
 	<div class="bgded overlay row4" style="background-image:url();">
 
 	</div>
-	<!-- ################################################################################################ -->
+
 	<div class="wrapper row5">
 		<div id="copyright" class="hoc clear">
-			<!-- ################################################################################################ -->
+
 
 			<p class="fl_right">Kelompok<a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">7</a></p>
-			<!-- ################################################################################################ -->
+
 		</div>
 	</div>
-	<!-- ################################################################################################ -->
+
 	<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
 	<!-- JAVASCRIPTS -->
 	<script src="layout/scripts/jquery.min.js"></script>

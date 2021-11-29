@@ -27,42 +27,40 @@ Licence URI: https://www.os-templates.com/template-terms
 
 			</div>
 			<nav id="mainav" class="fl_right">
-				<!-- ################################################################################################ -->
+
 				<ul class="clear">
-					<li><a href="/index.php">Home</a></li>
-					<li class="active"><a class="drop" href="#">Category</a>
+					<li><a href="../../index.php">Home</a></li>
+					<li class=""><a class="drop" href="#">Category</a>
 						<ul>
-							<li><a href="/pages/fooddrink.php">Foods & Drinks</a></li>
-							<li class="active"><a href="/pages/other.php">Others</a></li>
+							<li><a href="../fooddrink.php">Foods & Drinks</a></li>
+							<li class=""><a href="../other.php">Others</a></li>
 						</ul>
 					</li>
-					<li><a href="/pages/about.php">About</a>
-					<li><a href="/pages/admin/adminlogin.php">Admin</a></li>
+					<li><a href="../../index.php#ctdetails">About</a>
+					<li class="active"><a href="/pages/admin/adminlogin.php">Admin</a></li>
 
 				</ul>
-				<!-- ################################################################################################ -->
+
 			</nav>
 		</header>
 	</div>
 
-	<!-- ################################################################################################ -->
-	<div class="bgded overlay" style="background-image:url(/images/fotojual/bghome.jpg); opacity: 60%;">
+
+	<div class="bgded overlay" style="background-image:url(../../images/fotojual/IMG-20211024-WA0016.jpg); opacity: 60%;">
 		<div id="breadcrumb" class="hoc clear">
-			<!-- ################################################################################################ -->
+
 			<ul>
 				<h1 class="judultoko">
 					Foods & Drinks Input
 				</h1>
 			</ul>
-			<!-- ################################################################################################ -->
+
 		</div>
 	</div>
-	<!-- ################################################################################################ -->
-
 	<div class="wrapper row3">
 		<main class="hoc container clear">
 			<!-- main body -->
-			<!-- ################################################################################################ -->
+
 			<h3 style="text-align: center; font-size: 35px;">Halaman Input Foods & Drinks</h3>
 			<form action="tambah_produk.php" method="post" enctype="multipart/form-data">
 				<table>
@@ -106,20 +104,11 @@ Licence URI: https://www.os-templates.com/template-terms
 			</form>
 		</main>
 	</div>
-	<!-- ################################################################################################ -->
-
-
-
-	<!-- ################################################################################################ -->
 	<div class="wrapper row5">
 		<div id="copyright" class="hoc clear">
-			<!-- ################################################################################################ -->
-
 			<p class="fl_right">Kelompok <a title="Free Website Templates">7</a></p>
-			<!-- ################################################################################################ -->
 		</div>
 	</div>
-	<!-- ################################################################################################ -->
 
 	<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
 	<!-- JAVASCRIPTS -->

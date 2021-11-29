@@ -18,16 +18,16 @@ Licence URI: https://www.os-templates.com/template-terms
 </head>
 
 <body id="top">
-	<!-- ################################################################################################ -->
+
 	<div class="wrapper row1">
 		<header id="header" class="hoc clear">
 			<div id="logo" class="fl_left">
-				<!-- ################################################################################################ -->
+
 				<h1 class="logoname">Hayang<span>D</span>agang</h1>
-				<!-- ################################################################################################ -->
+
 			</div>
 			<nav id="mainav" class="fl_right">
-				<!-- ################################################################################################ -->
+
 				<ul class="clear">
 					<li><a href="../index.php">Home</a></li>
 					<li class="active"><a class="drop" href="#">Category</a>
@@ -37,118 +37,75 @@ Licence URI: https://www.os-templates.com/template-terms
 						</ul>
 					</li>
 					<li><a href="../index.php#ctdetails">About</a></li>
-					<li><a href="admin/adminlogin.php">Admin</a></li>
+					<li><a href="../adminlogin.php">Admin</a></li>
 
 				</ul>
-				<!-- ################################################################################################ -->
+
 			</nav>
 		</header>
 	</div>
-	<!-- ################################################################################################ -->
+
 	<div class="bgdedoverlay1" style="background-image: url(../images/fotojual/IMG-20211024-WA0015.jpg); opacity: 50%;">
 		<div id="breadcrumb" class="hoc clear">
-			<!-- ################################################################################################ -->
+
 			<h1 class="food">Foods & Drinks</h1>
-			<!-- ################################################################################################ -->
+
 		</div>
 	</div>
-	<!-- ################################################################################################ -->
+
 	<div class="wrapper row3">
 		<main class="hoc container clear">
 			<!-- main body -->
-			<!-- ################################################################################################ -->
-			<div class="content">
-				<!-- ################################################################################################ -->
-				<div id="gallery">
-					<!-- ini contoh dinamis -->
-					<figure>
-						<ul class="nospace clear">
-							<li class="one_quarter first"><a href="foodrink/ferdi.php"><img src="../images/fotojual/ferdi.jpeg" alt=""></a>
-								<p>OISHI FOOD</p>
-							</li>
-							<li class="one_quarter"><a href="foodrink/gita.php"><img src="../images/fotojual/gita.jpeg" alt=""></a>
-								<p>NGUNYAH</p>
-							</li>
-							<li class="one_quarter"><a href="foodrink/rehan.php"><img src="../images/fotojual/rehan.jpeg" alt=""></a>
-								<p>LOW KEBAB</p>
-							</li>
-							<li class="one_quarter"><a href="foodrink/fadhil.php"><img src="../images/fotojual/fadhil.jpeg" alt=""></a>
-								<p>ROTI MARYAM</p>
-							</li>
-							<li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-						</ul>
+			<?php
+      // jalankan query untuk menampilkan semua data diurutkan berdasarkan nim
+      $query = "SELECT * FROM admininput ORDER BY id ASC";
+      $result = mysqli_query($koneksi, $query);
+      //mengecek apakah ada error ketika menjalankan query
+      if(!$result){
+        die ("Query Error: ".mysqli_errno($koneksi).
+           " - ".mysqli_error($koneksi));
+      }
 
-					</figure>
-					<!-- ini contoh static  -->
-					<figure>
-						<ul class="nospace clear">
-							<li class="one_quarter first"><a href="foodrink/ferdi.php"><img src="../images/fotojual/ferdi.jpeg" alt=""></a>
-								<p>OISHI FOOD</p>
-							</li>
-							<li class="one_quarter"><a href="foodrink/gita.php"><img src="../images/fotojual/gita.jpeg" alt=""></a>
-								<p>NGUNYAH</p>
-							</li>
-							<li class="one_quarter"><a href="foodrink/rehan.php"><img src="../images/fotojual/rehan.jpeg" alt=""></a>
-								<p>LOW KEBAB</p>
-							</li>
-							<li class="one_quarter"><a href="foodrink/fadhil.php"><img src="../images/fotojual/fadhil.jpeg" alt=""></a>
-								<p>ROTI MARYAM</p>
-							</li>
-							<li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-						</ul>
+      //buat perulangan untuk element tabel dari data mahasiswa
+      $no = 1; //variabel untuk membuat nomor urut
+      // hasil query akan disimpan dalam variabel $data dalam bentuk array
+      // kemudian dicetak dengan perulangan while
+      while($row = mysqli_fetch_assoc($result))
+      {
+      ?>
+       <tr>
+          <td><?php echo $no; ?></td>
+          <td><?php echo $row['produkname']; ?></td>
+          <td><?php echo substr($row['owner'], 0, 20); ?>...</td>
+          <td><?php echo substr($row['desc'], 0, 20); ?>...</td>
+          <td><?php echo substr($row['price'], 0, 20); ?>...</td>
+          <td style="text-align: center;"><img src="../gambar/<?php echo $row['image']; ?>" style="width: 120px;"></td>
+      </tr>
+         
+      <?php
+        $no++; //untuk nomor urut terus bertambah 1
+      }
+      ?>
 
-					</figure>
-				</div>
-				<!-- ################################################################################################ -->
-
-				<!-- ################################################################################################ -->
-			</div>
-			<!-- ################################################################################################ -->
 			<!-- / main body -->
 			<div class="clear"></div>
 		</main>
 	</div>
-	<!-- ################################################################################################ -->
-	<!-- ################################################################################################ -->
-	<!-- ################################################################################################ -->
+
 	<div class="wrapper row2">
 		<section id="ctdetails" class="hoc container clear">
-			<!-- ################################################################################################ -->
 
-			<!-- ################################################################################################ -->
 		</section>
 	</div>
-	<!-- ################################################################################################ -->
-	<!-- ################################################################################################ -->
-	<!-- ################################################################################################ -->
 
-	<!-- ################################################################################################ -->
-	<!-- ################################################################################################ -->
-	<!-- ################################################################################################ -->
 	<div class="wrapper row5">
 		<div id="copyright" class="hoc clear">
-			<!-- ################################################################################################ -->
+
 			<p class="fl_right">Kelompok <a target="_blank" title="Free Website Templates">7</a></p>
-			<!-- ################################################################################################ -->
+
 		</div>
 	</div>
-	<!-- ################################################################################################ -->
-	<!-- ################################################################################################ -->
-	<!-- ################################################################################################ -->
+
 	<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
 	<!-- JAVASCRIPTS -->
 	<script src="../layout/scripts/jquery.min.js"></script>

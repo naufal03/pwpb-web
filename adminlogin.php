@@ -13,7 +13,7 @@ Licence URI: https://www.os-templates.com/template-terms
 <head>
 	<title>Admin Page Login</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" cntent="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
@@ -27,44 +27,44 @@ Licence URI: https://www.os-templates.com/template-terms
 
 			</div>
 			<nav id="mainav" class="fl_right">
-				<!-- ################################################################################################ -->
+				
 				<ul class="clear">
-					<li><a href="../../index.php">Home</a></li>
+					<li><a href="index.php">Home</a></li>
 					<li class=""><a class="drop" href="#">Category</a>
 						<ul>
-							<li><a href="../fooddrink.php">Foods & Drinks</a></li>
-							<li class=""><a href="../other.php">Others</a></li>
+							<li><a href="pages/fooddrink.php">Foods & Drinks</a></li>
+							<li class=""><a href="pages/other.php">Others</a></li>
 						</ul>
 					</li>
-					<li><a href="../../index.php#ctdetails">About</a></li>
+					<li><a href="index.php#ctdetails">About</a></li>
 					<li class="active"><a href="adminlogin.php">Admin</a></li>
 
 				</ul>
-				<!-- ################################################################################################ -->
+				
 			</nav>
 		</header>
 	</div>
 
-	<!-- ################################################################################################ -->
-	<div class="bgded overlay" style="background-image:url(../../images/fotojual/IMG-20211024-WA0016.jpg);opacity: 60%;">
+	
+	<div class="bgded overlay" style="background-image:url(images/fotojual/IMG-20211024-WA0016.jpg);opacity: 60%;">
 		<div id="breadcrumb" class="hoc clear">
-			<!-- ################################################################################################ -->
+			
 			<ul>
 				<h1 class="judultoko">
 					Masukan Akun
 				</h1>
 			</ul>
-			<!-- ################################################################################################ -->
+			
 		</div>
 	</div>
-	<!-- ################################################################################################ -->
+	
 
 	<div class="wrapper row3">
 		<main class="hoc container clear">
 			<!-- main body -->
-			<!-- ################################################################################################ -->
+			
 			<div class="pagefood">
-				<!-- ################################################################################################ -->
+				
 				
 				<div class="login">
 					<h2 class="login-header">Admin Login</h2>
@@ -81,26 +81,21 @@ Licence URI: https://www.os-templates.com/template-terms
 					</form>
 			</div>
 			
-			<!-- ################################################################################################ -->
+			
 			<!-- / main body -->
 			<div class="clear"></div>
 		</main>
 	</div>
-	<!-- ################################################################################################ -->
+	
 
-
-
-	<!-- ################################################################################################ -->
 	<div class="wrapper row5">
 		<div id="copyright" class="hoc clear">
-			<!-- ################################################################################################ -->
-
+			
 			<p class="fl_right">Kelompok <a title="Free Website Templates">7</a></p>
-			<!-- ################################################################################################ -->
+			
 		</div>
 	</div>
-	<!-- ################################################################################################ -->
-
+	
 	<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
 	<!-- JAVASCRIPTS -->
 	<script src="../layout/scripts/jquery.min.js"></script>
