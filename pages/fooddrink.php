@@ -1,3 +1,4 @@
+<?php include '../koneksi.php'?>
 <!DOCTYPE html>
 <!--
 Template Name: Chillaid
@@ -15,6 +16,10 @@ Licence URI: https://www.os-templates.com/template-terms
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body id="top">
@@ -56,39 +61,33 @@ Licence URI: https://www.os-templates.com/template-terms
 	<div class="wrapper row3">
 		<main class="hoc container clear">
 			<!-- main body -->
-			<?php
-      // jalankan query untuk menampilkan semua data diurutkan berdasarkan nim
-      $query = "SELECT * FROM admininput ORDER BY id ASC";
-      $result = mysqli_query($koneksi, $query);
-      //mengecek apakah ada error ketika menjalankan query
-      if(!$result){
-        die ("Query Error: ".mysqli_errno($koneksi).
-           " - ".mysqli_error($koneksi));
-      }
+		<table  border="1" cellspacing="0" cellpadding="10">
+			<tr style="text-align: center;">
+				<th width="300px">Produk</th>
+				<th width="300px">Owner</th>
+				<th width="500px">Deskripsi</th>
+				<th width="300px">Price</th>
+				<th width="500px">Foto</th>
+			</tr>
+			<?php 
+			$data = mysqli_query($koneksi, "select * from input");
+			while($d = mysqli_fetch_array($data)){
+				?>
+				<tr>
+					<td><?php echo $d['produk']; ?></td>
+					<td><?php echo $d['owner']; ?></td>
+					<td><?php echo $d['desc']; ?></td>
+					<td><?php echo $d['price']; ?></td>
+					<td><img src="../gambar/<?php echo $d['image'] ?>" width="35" height="40"></td>
+				</tr>
+				<?php
+			}
 
-      //buat perulangan untuk element tabel dari data mahasiswa
-      $no = 1; //variabel untuk membuat nomor urut
-      // hasil query akan disimpan dalam variabel $data dalam bentuk array
-      // kemudian dicetak dengan perulangan while
-      while($row = mysqli_fetch_assoc($result))
-      {
-      ?>
-       <tr>
-          <td><?php echo $no; ?></td>
-          <td><?php echo $row['produkname']; ?></td>
-          <td><?php echo substr($row['owner'], 0, 20); ?>...</td>
-          <td><?php echo substr($row['desc'], 0, 20); ?>...</td>
-          <td><?php echo substr($row['price'], 0, 20); ?>...</td>
-          <td style="text-align: center;"><img src="../gambar/<?php echo $row['image']; ?>" style="width: 120px;"></td>
-      </tr>
-         
-      <?php
-        $no++; //untuk nomor urut terus bertambah 1
-      }
-      ?>
-
-			<!-- / main body -->
-			<div class="clear"></div>
+			?>
+		</table>
+	</div>
+				<!-- / main body -->
+				<div class="clear"></div>
 		</main>
 	</div>
 

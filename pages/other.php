@@ -1,3 +1,4 @@
+<?php include '../koneksi.php' ?>
 <!DOCTYPE html>
 <!--
 Template Name: Chillaid
@@ -57,32 +58,30 @@ Licence URI: https://www.os-templates.com/template-terms
 		<main class="hoc container clear">
 			<!-- main body -->
 			
-			<div class="content">
-				
-				<div id="gallery">
-					<figure>
-						<ul class="nospace clear">
-							<li class="one_quarter first"><a href="others page/septian.php"><img src="../images/fotojual/Sr.jpg"
-										alt=""></a>
-								<p>Sr Paperbus</p>
-							</li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-							<li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-						</ul>
+			<table  border="1" cellspacing="0" cellpadding="10">
+			<tr style="text-align: center;">
+				<th width="300px">Produk</th>
+				<th width="300px">Owner</th>
+				<th width="500px">Deskripsi</th>
+				<th width="300px">Price</th>
+				<th width="500px">Foto</th>
+			</tr>
+			<?php 
+			$data = mysqli_query($koneksi, "select * from other");
+			while($d = mysqli_fetch_array($data)){
+				?>
+				<tr>
+					<td><?php echo $d['produk']; ?></td>
+					<td><?php echo $d['owner']; ?></td>
+					<td><?php echo $d['desc']; ?></td>
+					<td><?php echo $d['price']; ?></td>
+					<td><img src="../gambar/<?php echo $d['image'] ?>" width="35" height="40"></td>
+				</tr>
+				<?php
+			}
 
-					</figure>
-				</div>
-				
-			</div>
+			?>
+		</table>
 			
 			<!-- / main body -->
 			<div class="clear"></div>
