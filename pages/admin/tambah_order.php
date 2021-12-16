@@ -17,8 +17,8 @@ if (!in_array($ext, $ekstensi)) {
 	if ($ukuran < 999999999999999) {
 		$xx = $rand . '_' . $filename;
 		move_uploaded_file($_FILES['image']['tmp_name'], '../../gambar/' . $rand . '_' . $filename);
-		mysqli_query($koneksi, "INSERT INTO input VALUES('','$produk','$owner','$price','$kontak','$xx')");
-		header("location:../fooddrink.php?alert=berhasil");
+		mysqli_query($koneksi, "INSERT INTO other VALUES('','$produk','$owner','$price','$kontak','$xx')");
+		header("location:../other.php?alert=berhasil");
 	} else {
 		header("location:admininiput.php?alert=gagal_ukuran");
 	}

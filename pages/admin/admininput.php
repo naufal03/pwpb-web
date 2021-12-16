@@ -67,7 +67,7 @@ Licence URI: https://www.os-templates.com/template-terms
 					<tr>
 						<td>Nama Produk</td>
 						<td>
-							<input type="text" name="produkname">
+							<input type="text" name="produk">
 						</td>
 					</tr>
 					<tr>
@@ -77,15 +77,58 @@ Licence URI: https://www.os-templates.com/template-terms
 						</td>
 					</tr>
 					<tr>
-						<td>Deskripsi</td>
+						<td>Price</td>
 						<td>
-							<input type="text" name="desc">
+							<input type="number" name="price">
+						</td>
+					</tr>
+					<tr>
+						<td>Kontak</td>
+						<td>
+							<input type="number" name="kontak">
+						</td>
+					</tr>
+					<tr>
+						<td>Upload Foto</td>
+						<td>
+							<input type="file" name="image">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="submit" value="Kirim">
+						</td>
+					</tr>
+				</table>
+			</form>
+
+			<!-- ini untk other -->
+			<h3 style="text-align: center; font-size: 35px;">Halaman Input Other</h3>
+			<form action="tambah_order.php" method="post" enctype="multipart/form-data">
+				<table>
+					<tr>
+						<td>Nama Produk</td>
+						<td>
+							<input type="text" name="produk">
+						</td>
+					</tr>
+					<tr>
+						<td>Owner</td>
+						<td>
+							<input type="text" name="owner">
 						</td>
 					</tr>
 					<tr>
 						<td>Price</td>
 						<td>
 							<input type="number" name="price">
+						</td>
+					</tr>
+					<tr>
+						<td>Kontak</td>
+						<td>
+							<input type="number" name="kontak">
 						</td>
 					</tr>
 					<tr>
