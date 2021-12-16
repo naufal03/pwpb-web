@@ -1,4 +1,4 @@
-<?php include '../koneksi.php'?>
+<?php include '../koneksi.php' ?>
 <!DOCTYPE html>
 <!--
 Template Name: Chillaid
@@ -17,6 +17,7 @@ Licence URI: https://www.os-templates.com/template-terms
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -50,45 +51,53 @@ Licence URI: https://www.os-templates.com/template-terms
 		</header>
 	</div>
 
-	<div class="bgdedoverlay1" style="background-image: url(../images/fotojual/IMG-20211024-WA0015.jpg); opacity: 50%;">
-		<div id="breadcrumb" class="hoc clear">
-
-			<h1 class="food">Foods & Drinks</h1>
-
+	<div class="bgdedoverlay1">
+		<div class="overlay1">
+			<p>Foods & Drinks</p>
 		</div>
 	</div>
 
 	<div class="wrapper row3">
 		<main class="hoc container clear">
 			<!-- main body -->
-		<table  border="1" cellspacing="0" cellpadding="10">
-			<tr style="text-align: center;">
-				<th width="300px">Produk</th>
-				<th width="300px">Owner</th>
-				<th width="500px">Deskripsi</th>
-				<th width="300px">Price</th>
-				<th width="500px">Foto</th>
-			</tr>
-			<?php 
-			$data = mysqli_query($koneksi, "select * from input");
-			while($d = mysqli_fetch_array($data)){
-				?>
-				<tr>
-					<td><?php echo $d['produk']; ?></td>
-					<td><?php echo $d['owner']; ?></td>
-					<td><?php echo $d['desc']; ?></td>
-					<td><?php echo $d['price']; ?></td>
-					<td><img src="../gambar/<?php echo $d['image'] ?>" width="35" height="40"></td>
-				</tr>
+			<table border="1" width="600px" cellpadding>
 				<?php
-			}
+				$data = mysqli_query($koneksi, "select * from input");
+				while ($d = mysqli_fetch_array($data)) {
+				?>
+					<tr>
+						<td rowspan="5" width="400px" ><img src="../gambar/<?php echo $d['image'] ?>"></td>
+						<td colspan="2" style="text-align: center;"><b>Deskripsi</b></td>
+					</tr>
+					<tr>
+						<td>Produk :</td>
+						<td><?php echo $d['produk']; ?></td>
+					</tr>
+					<tr>
+						<td>Owner :</td>
+						<td><?php echo $d['owner']; ?></td>
+					</tr>
+					<tr>
+						<td>Price :</td>
+						<td><?php echo $d['price']; ?></td>
+					</tr>
+					<tr>
+						<td>Kontak :</td>
+						<td><?php echo $d['kontak']; ?></td>
+					</tr>
+				<?php
+				}
 
-			?>
-		</table>
+				?>
+			</table>
+			
+	<div class="clear"></div>
+
 	</div>
-				<!-- / main body -->
-				<div class="clear"></div>
-		</main>
+	<!-- / main body -->
+
+	
+	</main>
 	</div>
 
 	<div class="wrapper row2">

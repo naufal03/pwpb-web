@@ -1163,7 +1163,9 @@ textarea:focus,
 
 .row1 {
 	color: #FFFFFF;
-	background-color: #000000;
+	background-color: black;
+	position: fixed;
+	z-index: 99999999999;
 }
 
 .row2 {
@@ -1187,10 +1189,7 @@ textarea:focus,
 	background-color: #282E39;
 }
 
-.coloured {
-	color: #FFFFFF;
-	background-color: #97A9BD;
-}
+
 
 
 /* Header */
@@ -1781,12 +1780,8 @@ table a,
 	}
 }
 
-.bgdedoverlay{
-	background-image: url(/images/fotojual/bghome.jpg);
-	width: auto;
-	height: 768px;
-	opacity: 60%;
-}
+
+
 .bgdedoverlaylight{
 background-color: white;	
 color:black;
@@ -1968,3 +1963,99 @@ img {vertical-align: middle;}
  .card-text {
 	min-height: 120px;
  }
+
+
+.bgdedoverlay{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-image: url(../../images/fotojual/shop.jpg);
+	background-size: cover;
+	background-position: 0 90px;
+	border-bottom: 10px solid #002933;
+}
+@font-face {
+	font-family: ;
+	src: url();
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+	font-size: 50px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(0,0,0,0.7);
+	text-justify: 30px;
+	letter-spacing: 8px;
+	
+	/* sampe sini */
+}
+.dagang{
+	text-align: center;
+}
+
+.bgdedoverlay1{
+	width: 100%;
+	height: 350px;
+	position: relative;
+	background-image: url(../../images/fotojual/IMG-20211024-WA0015.jpg);
+	background-size: cover;
+	border-bottom: 10px solid #002933;
+}
+
+.overlay1{
+	width: 100%;
+	height: 100%;
+	font-size: 50px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: left;
+	background-color: rgb(0,0,0,0.7);
+}
+
+.bgdedoverlay2{
+	width: 100%;
+	height: 350px;
+	position: relative;
+	background-image: url(../../images/fotojual/IMG-20211024-WA0014.jpg);
+	background-size: cover;
+	border-bottom: 10px solid #002933;
+}
+
+.one_half a{
+	color: black;
+	text-decoration: none;
+	padding-top: 70px;
+}
+.one_half a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+.link a{
+	text-decoration: none;
+	background-color: salmon;
+	padding:20px 50px;
+	color: white;
+	border-radius: 20px;
+	margin: 0 auto;
+	display: inline-block;
+
+}
+.link a{
+	margin-bottom: 20px;
+}
+
+.link a:hover{
+	text-decoration: none;
+	color: white;
+}
+table, tr, td {
+	border: none;
+	
+}

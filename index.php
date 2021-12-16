@@ -15,6 +15,7 @@ Licence URI: https://www.os-templates.com/template-terms
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body id="top">
@@ -36,7 +37,7 @@ Licence URI: https://www.os-templates.com/template-terms
 							<li><a href="pages/other.php"> Others</a></li>
 						</ul>
 					</li>
-					<li><a href="index.phpctdetails">About</a></li>
+					<li><a href="index.php#ctdetails">About</a></li>
 					<li><a href="adminlogin.php">Admin</a></li>
 				</ul>
 
@@ -45,41 +46,75 @@ Licence URI: https://www.os-templates.com/template-terms
 	</div>
 
 
-	<div class="bgdedoverlay" style="background-image: url(images/fotojual/bghome.jpg); opacity: 60%;">
-		<div id="pageintro" class="hoc clear">
-
-
-			<article>
-				<h3 class="heading">Selamat Datang di Halaman Website Hayang Dagang</p>
-			</article>
+	<div class="bgdedoverlay">
+		<div class="overlay">
+			<p class="dagang">Selamat Datang Di Website</p>
+			<p class="dagang">Hayang Dagang</p>
 
 		</div>
 	</div>
 
-	<br><br><br>
+
 	<div class="wrapper row3">
 		<main class="hoc container clear">
-			<!-- main body -->
+			<!-- main body -->.
 
-			<section id="introblocks">
-				<ul class="nospace group btmspace-80 elements elements-four">
-					<li class="one_quarter">
-						<article><a href="pages/fooddrink.php"><i class="fas fa-glass-martini"></i></a>
-							<h6 class="heading">Foods & Drinks</h6>
-							<p>Klik icon untuk menuju Halaman Foods & Drinks</p>
-						</article>
-					</li>
-					<li class="one_quarter">
-						<article><a href="pages/other.php"><i class="fas fa-globe"></i></a>
-							<h6 class="heading">Others</h6>
-							<p>Klik icon untuk menjuru halaman Others</p>
-						</article>
-					</li>
+			<!-- Food Drink -->
+			<h3 clas="title"> Foods & Drinks</h3>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-header">
+							<img class="card-img-top" src="images/fotojual/gita.jpeg">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-header">
+							<div class="img"><img src="images/fotojual/fadhil.jpeg" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-header">
+							<div class="img"><img src="images/fotojual/rehan.jpeg" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-				</ul>
-			</section>
-			< <!-- / main body -->
-				<div class="clear"></div>
+			<div class="link">
+				<a href="pages/fooddrink.php">See More</a>
+			</div>
+
+			<!-- Other -->
+			<h3 clas="title"> Other </h3>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-header">
+							<img class="card-img-top" src="images/fotojual/Sr.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-header">
+							<div class="img"><img src="images/fotojual/dapa.jpeg" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="link">
+				<a href="pages/other.php">See More</a>
+			</div>
+
+
+			<!-- / main body -->
+			<div class="clear"></div>
 		</main>
 	</div>
 
@@ -93,25 +128,16 @@ Licence URI: https://www.os-templates.com/template-terms
 			<div class="slideshow-container">
 
 				<div class="mySlides fade">
-					<div class="numbertext">1 / 3</div>
-					<img src="images/fotojual/slime.jpg" style="width:100%">
-					<div class="text">Caption Text</div>
+					<img src="images/fotojual/promo1.jpeg" style="width:400px" height="546px">
 				</div>
-
 				<div class="mySlides fade">
-					<div class="numbertext">2 / 3</div>
-					<img src="images/fotojual/bghome.jpg" style="width:100%">
-					<div class="text">Caption Two</div>
+					<img src="images/fotojual/promo2.jpeg" style="width:400px" height="546px">
 				</div>
-
 				<div class="mySlides fade">
-					<div class="numbertext">3 / 3</div>
-					<img src="images/fotojual/Promo.jpg" style="width:100%">
-					<div class="text">Caption Three</div>
+					<img src="images/fotojual/promo3.jpeg" style="width:400px" height="546px">
 				</div>
-
 			</div>
-			<br>
+
 
 			<div style="text-align:center">
 				<span class="dot"></span>
@@ -141,13 +167,13 @@ Licence URI: https://www.os-templates.com/template-terms
 					</figure>
 				</li>
 				<li class="one_third">
-					<figure><a class="imgover" href="#"><img src="i" alt=""></a>
-						<figcaption><strong></strong> <em></em></figcaption>
+					<figure><a class="imgover" href="pages/other.php"><img src="images/fotojual/dapa.jpeg" alt=""></a>
+						<figcaption><strong>Summer Spring</strong> <em>Naufal Daffa</em></figcaption>
 					</figure>
 				</li>
 				<li class="one_third">
-					<figure><a class="imgover" href="#"><img src="" alt=""></a>
-						<figcaption><strong></strong> <em></em></figcaption>
+					<figure><a class="imgover" href="pages/fooddrink.php"><img src="images/fotojual/fadhil.jpeg" alt=""></a>
+						<figcaption><strong>Roti Maryam</strong> <em>Fadhil Amsyar</em></figcaption>
 					</figure>
 				</li>
 			</ul>
@@ -155,19 +181,6 @@ Licence URI: https://www.os-templates.com/template-terms
 		</div>
 	</div>
 
-	<div class="wrapper coloured">
-		<section id="testimonials" class="hoc container clear">
-
-
-		</section>
-	</div>
-
-	<div class="wrapper row3">
-		<section class="hoc container clear">
-
-
-		</section>
-	</div>
 
 	<div class="wrapper row2">
 		<section id="ctdetails" class="hoc container clear">
@@ -191,6 +204,11 @@ Licence URI: https://www.os-templates.com/template-terms
 							</strong> Septian Mahesa</span></li>
 				</ul>
 			</figure>
+			<article class="one_half">
+				<h6 class="heading">Social Media </h6>
+				<a href="http://www.instagram.com/hayang.dagang/" target="_blank"><img src="images/fotojual/ig.png" alt="">Hayang Dagang</a>
+
+			</article>
 
 		</section>
 	</div>

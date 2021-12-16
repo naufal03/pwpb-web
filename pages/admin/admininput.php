@@ -77,15 +77,15 @@ Licence URI: https://www.os-templates.com/template-terms
 						</td>
 					</tr>
 					<tr>
-						<td>Deskripsi</td>
-						<td>
-							<input type="text" name="desc">
-						</td>
-					</tr>
-					<tr>
 						<td>Price</td>
 						<td>
 							<input type="number" name="price">
+						</td>
+					</tr>
+					<tr>
+						<td>Kontak</td>
+						<td>
+							<input type="number" name="kontak">
 						</td>
 					</tr>
 					<tr>
@@ -120,15 +120,15 @@ Licence URI: https://www.os-templates.com/template-terms
 						</td>
 					</tr>
 					<tr>
-						<td>Deskripsi</td>
-						<td>
-							<input type="text" name="desc">
-						</td>
-					</tr>
-					<tr>
 						<td>Price</td>
 						<td>
 							<input type="number" name="price">
+						</td>
+					</tr>
+					<tr>
+						<td>Kontak</td>
+						<td>
+							<input type="number" name="kontak">
 						</td>
 					</tr>
 					<tr>
